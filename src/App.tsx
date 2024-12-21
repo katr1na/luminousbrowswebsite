@@ -1,34 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import AboutMe from "./components/AboutMe";
+import AfterCare from "./components/AfterCare";
+import BookNow from "./components/BookNow";
+import Contact from "./components/Contact";
+import HomePage from "./components/HomePage";
+import Lashes from "./components/Lashes";
+import Makeup from "./components/Makeup";
+import Microblading from "./components/Microblading";
+import TouchUps from "./components/TouchUps";
+import Footer from "./components/Footer";
+import "./styles.css"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <HomePage />
+            </div>
+          }
+        />
+        <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/aftercare" element={<AfterCare />} />
+        <Route path="/book-now" element={<BookNow />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/lashes" element={<Lashes />} />
+        <Route path="/makeup" element={<Makeup />} />
+        <Route path="/microblading" element={<Microblading />} />
+        <Route path="/touchups" element={<TouchUps />} />
+      </Routes>
+      <Footer />
+    </Router>
   )
 }
 

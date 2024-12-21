@@ -1,0 +1,752 @@
+:root {
+  --darkestgreen: #4b6635;
+  --secondpink: #f5d7d7;
+  --darkestgrey: #414141;
+  --lightestgreen: #d0dcc6;
+  --thirdpink: #e6bebe;
+  --secondgreen: #90ab79;
+  --thirdgreen: #597344;
+  --fourthpink: #d6a9a9;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("assets/BrandonGrotesque-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Didot";
+  src: url("assets/DidotLTPro-Roman.ttf");
+}
+
+@font-face {
+  font-family: "Proxima";
+  src: url("assets/ProximaNova-Regular.ttf");
+}
+
+.aboutme-p {
+  color: var(--darkestgreen);
+  font-family: "Proxima";
+}
+
+.navbar-container {
+  background-image: url("./assets/dark-leaves.jpg");
+  background-size: cover;
+  padding: 1.5rem;
+  height: 20vw;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+.navbar-link {
+  text-decoration: none;
+}
+
+.navbar-links p {
+  font-family: "Brandon";
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-links p:hover {
+  color: var(--darkestgreen);
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.hamburger:hover {
+  color: var(--darkestgreen);
+}
+
+.navbar-links.open {
+  border: solid 2px var(--lightestgreen);
+}
+
+.navbar-links.open p {
+  transition: background-color 0.3s ease;
+  color: var(--lightestgreen);
+  font-family: "Proxima";
+}
+
+.navbar-links.open p:hover {
+  background-color: var(--darkestgreen);
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: var(--darkestgrey);
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown .dropdown-menu.show {
+  display: block;
+}
+
+.nav-title {
+  text-decoration: none;
+}
+
+.nav-title h1 {
+  font-family: "Didot";
+  color: var(--thirdpink);
+  text-align: center;
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-subtitle {
+  font-family: "Brandon";
+  color: var(--fourthpink);
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+}
+
+.seasonal-container {
+  text-align: center;
+  border: solid 2px var(--darkestgrey);
+  width: 50%;
+  height: auto;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.seasonal-container h3 {
+  font-family: "Proxima";
+  font-size: 60px;
+  font-style: italic;
+  color: var(--darkestgreen);
+}
+
+.specials-text {
+  width: 70%;
+  margin: auto;
+  background-color: var(--lightestgreen);
+}
+
+.specials-text p {
+  text-transform: uppercase;
+  font-family: "Proxima";
+  font-size: 40px;
+  color: var(--darkestgrey);
+  margin: 5%;
+}
+
+#exclusion {
+  text-transform: none;
+  font-size: 20px;
+  font-style: italic;
+  margin: 0;
+}
+
+.homepage-button {
+  text-decoration: none;
+  cursor: default;
+}
+
+.specials-book-now {
+  font-family: "Proxima";
+  font-size: 20px;
+  color: var(--darkestgreen);
+  text-transform: uppercase;
+  border: 2px solid var(--fourthpink);
+  border-radius: 10px;
+  padding: 10px;
+  width: 20%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.specials-book-now:hover,
+#specials-read-more:hover,
+.aftercare-button:hover {
+  background-color: var(--fourthpink);
+}
+
+.about-me {
+  background-color: var(--secondpink);
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+.about-me h3 {
+  font-family: "Proxima";
+  font-size: 60px;
+  color: var(--darkestgreen);
+}
+
+.about-me p {
+  font-family: "Proxima";
+  font-size: 18px;
+  width: 50%;
+  color: var(--darkestgreen);
+  line-height: 40px;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+#specials-read-more {
+  font-family: "Proxima";
+  font-size: 20px;
+  color: var(--darkestgreen);
+  text-transform: uppercase;
+  border: 2px solid var(--fourthpink);
+  border-radius: 10px;
+  padding: 10px;
+  width: 20%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.testimonials {
+  background-color: var(--lightestgreen);
+  padding: 3%;
+  margin: 0;
+  text-align: center;
+}
+
+.testimonial-container {
+  border: 5px solid white;
+  padding: 10px;
+  padding-bottom: 5%;
+}
+
+.testimonial-container h3 {
+  font-size: 60px;
+  color: var(--darkestgreen);
+  font-family: "Proxima";
+}
+
+.testimonial-container p {
+  font-family: "Proxima";
+  font-size: 18px;
+  color: var(--darkestgrey);
+  line-height: 30px;
+}
+
+.leave-review-button {
+  font-family: "Proxima";
+  font-size: 20px;
+  color: var(--darkestgreen);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--secondgreen);
+  border-radius: 10px;
+  padding: 10px;
+  width: 20%;
+  margin: auto;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.leave-review-button:hover {
+  background-color: var(--secondgreen);
+}
+
+.aftercare-button {
+  font-family: "Proxima";
+  font-size: 20px;
+  color: var(--darkestgreen);
+  text-transform: uppercase;
+  border: 2px solid var(--fourthpink);
+  border-radius: 10px;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.service-title {
+  color: var(--darkestgreen);
+  font-style: italic;
+  font-family: "Didot";
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.microblading h3,
+.makeup h3,
+.lashes h3 {
+  color: var(--darkestgrey);
+  font-family: "Proxima";
+  font-size: 25px;
+  text-align: center;
+}
+
+.microblading-other h2 {
+  font-family: "Proxima";
+  text-transform: uppercase;
+  color: var(--darkestgreen);
+  background-color: var(--lightestgreen);
+}
+
+.microblading-other-desc {
+  border: 2px solid var(--darkestgreen);
+  height: 70%;
+}
+
+.microblading-nano-desc {
+  border: 2px solid var(--darkestgreen);
+}
+
+.microblading-other-desc p {
+  font-family: "Proxima";
+  font-size: 18px;
+  color: var(--darkestgreen);
+}
+
+.microblading-carousel {
+  width: 100%;
+  margin: auto;
+}
+
+.touchups img {
+  width: 50%;
+}
+
+.aftercare h3 {
+  font-family: "Proxima";
+  font-size: 60px;
+  color: var(--darkestgreen);
+}
+
+#disclaimer {
+  color: var(--darkestgrey);
+  border: 2px solid var(--darkestgreen);
+  padding: 10px;
+  font-family: "Proxima";
+  font-size: 18px;
+}
+
+#aftercare-processes h3 {
+  font-family: "Proxima";
+  font-size: 30px;
+  color: var(--darkestgreen);
+  text-align: center;
+}
+
+.about-me-page h3 {
+  color: var(--darkestgrey);
+  font-family: "Proxima";
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.about-me-desc {
+  background-color: var(--lightestgreen);
+}
+
+.about-me-desc p {
+  color: var(--darkestgreen);
+  font-family: "Proxima";
+  font-size: 18px;
+}
+
+.about-me-main-image img {
+  width: 100%;
+  height: auto;
+  border: 4px solid var(--darkestgreen);
+}
+
+.map {
+  border: 3px solid var(--darkestgreen);
+}
+
+.contact-info {
+  background-color: var(--lightestgreen);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-info h3 {
+  color: white;
+  background-color: var(--darkestgreen);
+  font-family: "Proxima";
+}
+
+.contact-info p {
+  color: var(--darkestgrey);
+}
+
+.booknow {
+  background-color: var(--lightestgreen);
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.booknow h3 {
+  color: white;
+  font-size: 40px;
+  font-family: "Proxima";
+}
+
+.booknow a,
+.booknow Link,
+.booknow p {
+  color: var(--darkestgreen);
+}
+
+.footer {
+  font-family: "Proxima";
+  text-align: center;
+}
+
+.social-icons {
+  margin: 5px;
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575px) {
+  .navbar-container {
+    height: 150px;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 5px;
+    width: 5px;
+    z-index: 999;
+  }
+
+  .navbar-links.open {
+    display: flex;
+    position: absolute;
+    background-color: var(--secondgreen);
+    top: 0;
+    left: 0;
+    width: 60%;
+    padding-top: 50px;
+    justify-content: flex-start;
+    z-index: 998;
+  }
+
+  .navbar-links.open p {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  .nav-title h1 {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+
+  .nav-subtitle {
+    font-size: 20px;
+  }
+
+  .seasonal-container {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+
+  .seasonal-container h3 {
+    font-size: 30px;
+  }
+
+  .specials-text {
+    width: 80%;
+  }
+
+  .specials-text p {
+    font-size: 25px;
+  }
+
+  #exclusion {
+    font-size: 14px;
+  }
+
+  .specials-book-now {
+    width: 50%;
+  }
+
+  .about-me h3 {
+    font-size: 30px;
+  }
+
+  .about-me p {
+    font-size: 16px;
+    width: 70%;
+    line-height: 25px;
+  }
+
+  #specials-read-more {
+    width: 50%;
+  }
+
+  .testimonial-container {
+    padding-bottom: 30px;
+  }
+
+  .testimonial-container h3 {
+    font-size: 30px;
+  }
+
+  .testimonial-container p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .booknow {
+    width: 80%;
+  }
+
+  .service-title, .aftercare h3 {
+    font-size: 30px;
+  }
+
+  .aftercare-button {
+    font-size: 15px;
+    width: 80%;
+  }
+
+  .microblading h3,
+  .makeup h3,
+  .lashes h3 {
+    font-size: 18px;
+  }
+
+  .touchups img {
+    width: 100%;
+  }
+
+  #disclaimer {
+    font-size: 16px;
+  }
+  
+  #aftercare-processes h3 {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 829px) {
+  .navbar-container {
+    height: 150px;
+  }
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 10px;
+    width: 5px;
+    z-index: 999;
+  }
+
+  .navbar-links.open {
+    display: flex;
+    position: absolute;
+    background-color: var(--secondgreen);
+    top: 0;
+    left: 0;
+    width: 60%;
+    padding-top: 60px;
+    justify-content: flex-start;
+    z-index: 998;
+  }
+
+  .navbar-links.open p {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  .banner-carousel {
+    width: 80%;
+  }
+
+  .nav-title h1 {
+    font-size: 30px;
+  }
+
+  .nav-subtitle {
+    font-size: 20px;
+  }
+
+  .seasonal-container {
+    width: 80%;
+    height: auto;
+    margin: auto;
+  }
+
+  .seasonal-container h3 {
+    font-size: 30px;
+  }
+
+  .specials-text {
+    width: 80%;
+  }
+
+  .specials-text p {
+    font-size: 25px;
+  }
+
+  #exclusion {
+    font-size: 14px;
+  }
+
+  .specials-book-now {
+    width: 50%;
+  }
+
+  .about-me h3 {
+    font-size: 30px;
+  }
+
+  .about-me p {
+    font-size: 16px;
+    width: 70%;
+    line-height: 25px;
+  }
+
+  #specials-read-more {
+    width: 50%;
+  }
+
+  .testimonial-container {
+    padding-bottom: 30px;
+  }
+
+  .testimonial-container h3 {
+    font-size: 30px;
+  }
+
+  .testimonial-container p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .booknow {
+    width: 80%;
+  }
+
+
+  .service-title, .aftercare h3 {
+    font-size: 40px;
+  }
+
+  .aftercare-button {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .microblading h3,
+  .makeup h3,
+  .lashes h3 {
+    font-size: 18px;
+  }
+
+  .touchups img {
+    width: 70%;
+  }
+
+  #disclaimer {
+    font-size: 16px;
+  }
+  
+  #aftercare-processes h3 {
+    font-size: 20px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 830px) and (max-width: 991px) {
+  .navbar-container {
+    height: 250px;
+  }
+  .nav-title h1 {
+    font-size: 40px;
+  }
+
+  .nav-subtitle {
+    font-size: 30px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-container {
+    height: 300px;
+  }
+  .nav-title h1 {
+    font-size: 50px;
+  }
+
+  .nav-subtitle {
+    font-size: 40px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1599px) {
+}
+
+/* Extra-extra large devices (4K screens, 1600px and up) */
+@media (min-width: 1600px) {
+  /* Styles for extra-large screens and high-res monitors */
+}
