@@ -7,7 +7,7 @@ const HomePage = () => {
         <div className="seasonal-container">
           <h3 className="my-4">SEASONAL</h3>
           <div className="specials-text p-4">
-            <p>$50 Off All Permanent Makeup &amp; Microblading Services</p>
+            <p>$50 Off All Permanent Makeup &amp; Microblading Services (Full Services Only)</p>
             <p id="exclusion">*excluding touch-ups</p>
           </div>
           <Link className="homepage-button" to="/book-now">
