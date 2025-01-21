@@ -50,7 +50,7 @@ const NavBar = () => {
                   window.innerWidth > 575 && closeServicesMenu()
                 }
               >
-                <p>Services ▼</p>
+                <p onClick={toggleServicesMenu}>Services ▼</p>
                 <div
                   className={`dropdown-menu ${isServicesOpen ? "show" : ""}`} onClick={toggleServicesMenu}
                 >
