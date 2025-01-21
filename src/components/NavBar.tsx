@@ -21,6 +21,7 @@ const NavBar = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    setServicesOpen(false);
   };
 
   const closeMenu = () => {
