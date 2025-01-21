@@ -51,7 +51,7 @@ const NavBar = () => {
               >
                 <p>Services ▼</p>
                 <div
-                  className={`dropdown-menu ${isServicesOpen ? "show" : ""}`}
+                  className={`dropdown-menu ${isServicesOpen ? "show" : ""}`} onClick={toggleServicesMenu}
                 >
                   <Link to="/microblading" onClick={closeMenus}>
                     Microblading
