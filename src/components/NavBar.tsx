@@ -14,6 +14,11 @@ const NavBar = () => {
     setServicesOpen(false);
   };
 
+  const closeMenus = () => {
+    setServicesOpen(false);
+    setIsOpen(false);
+  };
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -48,19 +53,19 @@ const NavBar = () => {
                 <div
                   className={`dropdown-menu ${isServicesOpen ? "show" : ""}`}
                 >
-                  <Link to="/microblading" onClick={closeMenu}>
+                  <Link to="/microblading" onClick={closeMenus}>
                     Microblading
                   </Link>
-                  <Link to="/makeup" onClick={closeMenu}>
+                  <Link to="/makeup" onClick={closeMenus}>
                     Makeup
                   </Link>
-                  <Link to="/lashes" onClick={closeMenu}>
+                  <Link to="/lashes" onClick={closeMenus}>
                     Lashes
                   </Link>
-                  <Link to="/touchups" onClick={closeMenu}>
+                  <Link to="/touchups" onClick={closeMenus}>
                     Touchups
                   </Link>
-                  <Link to="/aftercare" onClick={closeMenu}>
+                  <Link to="/aftercare" onClick={closeMenus}>
                     Aftercare
                   </Link>
                 </div>

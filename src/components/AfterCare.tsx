@@ -18,7 +18,7 @@ const AfterCare = () => {
                 <br />
                 <br />
                 If you are pregnant, it is highly recommended that you avoid
-                permanent makeup procedures.
+                permanent makeup procedures.<br/>
                 <strong className="text-danger">
                   For your safety, we will not perform the procedure in this
                   situation.
