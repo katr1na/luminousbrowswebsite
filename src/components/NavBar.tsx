@@ -69,6 +69,9 @@ const NavBar = () => {
               <Link className="navbar-link" to="/about-me" onClick={closeMenu}>
                 <p>About Me</p>
               </Link>
+              <Link className="navbar-link" to="/gallery" onClick={closeMenu}>
+                <p>Gallery</p>
+              </Link>
               <Link className="navbar-link" to="/contact" onClick={closeMenu}>
                 <p>Contact</p>
               </Link>

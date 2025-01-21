@@ -11,6 +11,7 @@ import Microblading from "./components/Microblading";
 import TouchUps from "./components/TouchUps";
 import Footer from "./components/Footer";
 import "./styles.css"
+import Gallery from "./components/Gallery";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           }
         />
         <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/aftercare" element={<AfterCare />} />
         <Route path="/book-now" element={<BookNow />} />
         <Route path="/contact" element={<Contact />} />

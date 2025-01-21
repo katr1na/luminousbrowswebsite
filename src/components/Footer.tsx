@@ -4,9 +4,9 @@ const Footer = () => {
       <footer className="footer my-5">
         <h3>HOURS</h3>
         <p>
-          Mon - Fri: 10:00am - 7pm
+          Mon - Fri: 9:30am - 7pm
           <br />
-          Saturday: 10:00am - 6pm
+          Saturday: 9:30am - 6pm
           <br />
           Sunday: Closed
         </p>
