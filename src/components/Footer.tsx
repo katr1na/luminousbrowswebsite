@@ -40,7 +40,7 @@ const Footer = () => {
 
         <a
           className="social-icons"
-          href="https://www.facebook.com/khanh.lafayette.1"
+          href="https://www.facebook.com/people/Luminous-Brows-PMU/61572382650719/"
         >
           <svg
             width="48"
