@@ -1,9 +1,9 @@
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import hairextPriices from "../assets/hairext_prices.png";
-import he_1 from "../assets/he_1.jpg";
-import he_2 from "../assets/he_2.jpg";
-import he_3 from "../assets/he_3.jpg";
+import he_1 from "../assets/he_1.png";
+import he_2 from "../assets/he_2.png";
+import he_3 from "../assets/he_3.png";
 
 const HairExt = () => {
   const images = [
