@@ -25,7 +25,7 @@ const Makeup = () => {
     <div>
       <section className="makeup mt-5">
         <div className="container-fluid">
-          <div className="row">
+          <div className="row justify-content-center text-center">
             <div className="col-lg-7 col-xxl-5">
               <h2 className="service-title">Permanent Makeup</h2>
               <Link className="homepage-button" to="/aftercare">

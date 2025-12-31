@@ -63,6 +63,9 @@ const NavBar = () => {
                   <Link to="/lashes" onClick={closeMenus}>
                     Lashes
                   </Link>
+                  <Link to="/hairext" onClick={closeMenus}>
+                    Hair Extensions
+                  </Link>
                   <Link to="/touchups" onClick={closeMenus}>
                     Touchups
                   </Link>

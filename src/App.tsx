@@ -12,6 +12,7 @@ import TouchUps from "./components/TouchUps";
 import Footer from "./components/Footer";
 import "./styles.css"
 import Gallery from "./components/Gallery";
+import HairExt from "./components/HairExt";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/makeup" element={<Makeup />} />
         <Route path="/microblading" element={<Microblading />} />
         <Route path="/touchups" element={<TouchUps />} />
+        <Route path="/hairext" element={<HairExt />} />
       </Routes>
       <Footer />
     </Router>
